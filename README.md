@@ -1,7 +1,7 @@
 # QgenY
 A UVM Environment and testbench generator
 
-##Problems addressed in current flow
+## Problems addressed in current flow
 1. Update in interface leads to changes in multiple files and tests
 2. Difficult to keep records or versions for diffrent projects
 3. Usually Directed tests are developed which are developed which are difficult to randomize
@@ -13,7 +13,7 @@ A UVM Environment and testbench generator
 9. Not much portable hence reduced reusability
 10. Consumes lot of time in TB developement and fixing rather than focussing on actual debug
 
-##Problems with current generators
+## Problems with current generators
 1. All of them need to be used for complete development of TB
 2. Need to use their propritery tools
 3. Needs to purchase license
