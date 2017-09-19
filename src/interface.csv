@@ -1,0 +1,12 @@
+,,
+File_type,,
+interface,,
+,,
+Block,,
+decoder,,
+,,
+Interface,,
+port,type,size
+clk,clock_in,1
+sel,input,2
+y,output,4
