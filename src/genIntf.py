@@ -71,7 +71,7 @@ def gen_intf(inFile, outFile):
                                     bitWidth = component
                                     has_bitWidth = True
                                 else:
-                                    signal_names = component
+                                    signal_names = signal_names + " " +component
                         intf_signal = "logic "
                         intf_signal = intf_signal.rjust(8)
                         
@@ -85,7 +85,7 @@ def gen_intf(inFile, outFile):
                             intf_signal = intf_signal + bitWidth
                         
                         intf_signal = intf_signal.ljust(20)
-                        intf_signal = intf_signal + signal_names + " // Input: " + comment_part + "\n"
+                        intf_signal = intf_signal + signal_names + " // Input : " + comment_part + "\n"
                         intf_list.append(intf_signal)
                     else:
                         port_part = re.sub('\s+', ' ', line.strip()).split(' ')
@@ -98,7 +98,7 @@ def gen_intf(inFile, outFile):
                                     bitWidth = component
                                     has_bitWidth = True
                                 else:
-                                    signal_names = component
+                                    signal_names = signal_names + " " +component
                         intf_signal = "logic "
                         intf_signal = intf_signal.rjust(8)
                         
@@ -131,7 +131,7 @@ def gen_intf(inFile, outFile):
                                     bitWidth = component
                                     has_bitWidth = True
                                 else:
-                                    signal_names = component
+                                    signal_names = signal_names + " " +component
                         intf_signal = "logic "
                         intf_signal = intf_signal.rjust(8)
                         
@@ -158,7 +158,7 @@ def gen_intf(inFile, outFile):
                                     bitWidth = component
                                     has_bitWidth = True
                                 else:
-                                    signal_names = component
+                                    signal_names = signal_names + " " +component
                         intf_signal = "logic "
                         intf_signal = intf_signal.rjust(8)
                         
@@ -191,7 +191,7 @@ def gen_intf(inFile, outFile):
                                     bitWidth = component
                                     has_bitWidth = True
                                 else:
-                                    signal_names = component
+                                    signal_names = signal_names + " " +component
                         intf_signal = "wire  "
                         intf_signal = intf_signal.rjust(8)
                         
@@ -205,7 +205,7 @@ def gen_intf(inFile, outFile):
                             intf_signal = intf_signal + bitWidth
                         
                         intf_signal = intf_signal.ljust(20)
-                        intf_signal = intf_signal + signal_names + " // Inout: " + comment_part + "\n"
+                        intf_signal = intf_signal + signal_names + " // Inout : " + comment_part + "\n"
                         intf_list.append(intf_signal)
                     else:
                         port_part = re.sub('\s+', ' ', line.strip()).split(' ')
@@ -218,7 +218,7 @@ def gen_intf(inFile, outFile):
                                     bitWidth = component
                                     has_bitWidth = True
                                 else:
-                                    signal_names = component
+                                    signal_names = signal_names + " " +component
                         intf_signal = "logic "
                         intf_signal = intf_signal.rjust(8)
                         
